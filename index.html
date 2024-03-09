@@ -1,35 +1,29 @@
-<!DOCTYPE html>
-<html lang="Pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>XVideos</title>
-    <style>
-
-        html {
-            background-color: #000;
-            font-family: Monospace;
-            color: #fff;
-        }
-
-        #searchbar {
-            background-color: #222;
-            display: block;
-        }
-
-        #title {
-            font-size: 40px;
-        }
-
-        #X {
-            color: red;
-        }
-
-    </style>
-</head>
+<title>XVideos</title>
+<style>
+    body {
+        margin: 0px;
+    }
+    html {
+        background-color: #000;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+    #topbar {
+        background-color: #222;
+    }
+    #title {
+        font-weight: bold;
+        text-align: center;
+        font-size: 40px;
+    }
+    #x {
+        color: red;
+    }
+</style>
 <body>
 
-    <div id="searchbar">
-        <h1 id="title"><div id="X">X</div><div id="videos">Videos</div></h1>
+    <div id="topbar">
+        <div id="title"><span id="x">X</span>Videos</div>
     </div>
 
     <video controls>
@@ -47,7 +41,4 @@
     <video autoplay muted loop src="media/spinninggorillaav1.mp4">
     <br>
 
-    
-
 </body>
-</html>
