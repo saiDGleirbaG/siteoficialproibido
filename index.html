@@ -1,41 +1,56 @@
-<title>XVideos</title>
-<style>
-    body {
-        background-color: #000;
-        font-family: Arial, sans-serif;
-        margin: 0px;
-        color: #fff;
-    }
-    #topbar {
-        background-color: #111;
-        position: fixed;
-        width: 100%;
-    }
-    #title {
-        font-weight: bold; 
-        text-align: center;
-        font-size: 40px;
-    }
-    #x {
-        color: red;
-    }
-</style>
-
-    <div id="topbar">
-        <div id="title"><span id="x">X</span>Videos</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XVideos</title>
+    <style>
+        body {
+            background-color: #000; 
+            font-family: Arial, sans-serif; 
+            margin: 0px; 
+            color: #fff;
+        }
+        #header {
+            background-color: #111; 
+            position: fixed; 
+            width: 100%; 
+            font-size: 40px;
+            font-weight: bold;
+            height: 55.5px;
+            display: flex; /* Para alinhar verticalmente */
+            align-items: center; /* Para alinhar verticalmente */
+            justify-content: flex-start; /* Para ajustar para a esquerda */
+            padding-left: 20px; /* Para adicionar margem à esquerda */
+        }
+        #header span {
+            color: red;
+        }
+        .content {
+            max-width: 800px; /* Largura máxima para centralização */
+            margin: 0 auto; /* Centralizar horizontalmente */
+            padding-top: 70px; /* Para compensar a altura do cabeçalho */
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><span>X</span>Videos</div>
+    <div class="content">
+        <video controls>
+            <source src="media/terrordokamasutraav1.mp4" type="video/mp4">
+            <source src="media/terrordokamasutrah264.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <img src="media/garotopropagandamercedes.gif" alt="Garoto Propaganda Mercedes">
+        <br>
+        <img src="media/novosprodutosnaciena.gif" alt="Novos Produtos Na Ciena">
+        <br>
+        <video autoplay muted loop>
+            <source src="media/spinninggorillaav1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
     </div>
-
-    <video controls>
-        <source src="media/terrordokamasutraav1.mp4">
-        <source src="media/terrordokamasutrah264.mp4">
-    </video>
-    <br>
-
-    <img src="media/garotopropagandamercedes.gif">
-    <br>
-
-    <img src="media/novosprodutosnaciena.gif">
-    <br>
-
-    <video autoplay muted loop src="media/spinninggorillaav1.mp4">
-    <br>
+</body>
+</html>
