@@ -4,52 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XVideos</title>
-    <style>
-        body {
-            background-color: #000;
-            font-family: Arial, sans-serif;
-            margin: 0px;
-            color: #fff;
-        }
-
-        #header {
-            background-color: #111;
-            position: fixed;
-            width: 100%;
-            font-size: 40px;
-            font-weight: bold;
-            height: 55.5px;
-            display: flex; /* Para alinhar verticalmente */
-            align-items: center; /* Para alinhar verticalmente */
-            justify-content: flex-start; /* Para ajustar para a esquerda */
-            padding-left: 20px; /* Para adicionar margem à esquerda */
-        }
-
-        #header span {
-            color: red;
-        }
-
-        .content {
-            max-width: 800px; /* Largura máxima para centralização */
-            margin: 0 auto; /* Centralizar horizontalmente */
-            padding-top: 70px; /* Para compensar a altura do cabeçalho */
-            display: flex;
-            flex-direction: column; /* Para alinhar os itens verticalmente */
-            align-items: center; /* Para alinhar os itens centralmente */
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            font-size: 12px;
-            color: gray;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-    <div id="header"><span>X</span>Videos</div>
+    <div id="header">
+        <span>X</span>Videos
+        <div><img src="media/felipelipe.jpg"></div>
+    </div>
     <div class="content">
         <video controls>
             <source src="media/terrordokamasutraav1.mp4" type="video/mp4">
